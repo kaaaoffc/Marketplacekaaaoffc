@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beli Akses Panel Lengkap</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--primary:#4361ee;
+--primary-light:#4895ef;
+--primary-dark:#3a0ca3;
+--secondary:#7209b7;
+--accent:#f72585;
+--success:#4cc9f0;
+--dark-bg:#0f172a;
+--card-bg:#1e293b;
+--text:#f8fafc;
+--text-light:#cbd5e1;
+--border:#334155;
+--shadow:0 10px 25px -5px rgba(0,0,0,0.5);
+--gradient:linear-gradient(135deg,var(--primary),var(--primary-dark));
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+background:var(--dark-bg);
+color:var(--text);
+font-family:Inter,sans-serif;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+.header{
+text-align:center;
+padding:30px;
+background:var(--gradient);
+border-radius:20px;
+margin-bottom:40px;
+}
+
+/* BENEFIT */
+.benefits{
+background:var(--card-bg);
+padding:30px;
+border-radius:20px;
+margin-bottom:40px;
+}
+
+.benefits-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.benefit-item{
+padding:15px;
+background:rgba(255,255,255,0.05);
+border-radius:12px;
+}
+
+/* PRICING */
+.pricing-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-bottom:40px;
+}
+
+.pricing-card{
+background:var(--card-bg);
+border-radius:20px;
+overflow:hidden;
+border:1px solid var(--border);
+transition:.3s;
+}
+
+.pricing-card:hover{
+transform:translateY(-8px);
+box-shadow:var(--shadow);
+}
+
+.card-header{
+padding:30px;
+text-align:center;
+background:linear-gradient(135deg,#4361ee,#7209b7);
+color:white;
+}
+
+.card-price{
+font-size:2.3rem;
+font-weight:700;
+}
+
+.card-body{padding:25px}
+
+.features-list{list-style:none}
+
+.features-list li{
+padding:8px 0;
+display:flex;
+gap:10px;
+align-items:center;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.features-list i{color:var(--success)}
+
+.buy-btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:var(--gradient);
+color:white;
+font-weight:600;
+cursor:pointer;
+margin-top:20px;
+}
+
+/* VPS */
+.vps-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-bottom:40px;
+}
+
+.vps-card{
+background:var(--card-bg);
+border-radius:20px;
+overflow:hidden;
+border:1px solid var(--border);
+transition:.3s;
+}
+
+.vps-card:hover{
+transform:translateY(-8px);
+}
+
+.vps-header{
+padding:25px;
+text-align:center;
+background:linear-gradient(135deg,#4361ee,#7209b7);
+color:white;
+}
+
+.vps-price{
+font-size:2.2rem;
+font-weight:700;
+}
+
+.vps-body{padding:20px}
+
+.vps-list{list-style:none}
+
+.vps-list li{
+padding:8px 0;
+display:flex;
+gap:10px;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.vps-list i{color:var(--success)}
+
+.vps-btn{
+width:100%;
+padding:14px;
+margin-top:20px;
+border:none;
+border-radius:12px;
+background:var(--gradient);
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>PTERODATCLY PANEL LEGAL</h1>
+<p>Full Akses Panel — Modal Receh, Untung Ga Receh!</p>
+</div>
+
+<section class="benefits">
+<h2 style="margin-bottom:20px;color:var(--success)">Kenapa Server Kita?</h2>
+
+<div class="benefits-grid">
+<div class="benefit-item">Anti Delay & Lag Server Stabil</div>
+<div class="benefit-item">Keamanan Terjamin</div>
+<div class="benefit-item">Server Pribadi</div>
+<div class="benefit-item">Full Support Framework</div>
+</div>
+</section>
+
+<!-- Pricing -->
+<div class="pricing-grid">
+
+<div class="pricing-card">
+<div class="card-header">
+<h3>Panel RAM Options</h3>
+<div class="card-price">Rp 5.000</div>
+</div>
+
+<div class="card-body">
+<ul class="features-list">
+<li><i class="fas fa-check"></i> Anti Lag</li>
+<li><i class="fas fa-check"></i> Bot Multi Device</li>
+<li><i class="fas fa-check"></i> Support NodeJS</li>
+</ul>
+
+<button class="buy-btn" onclick="order('Panel RAM','5000')">
+<i class="fab fa-telegram"></i> Beli Sekarang
+</button>
+</div>
+</div>
+
+<div class="pricing-card">
+<div class="card-header">
+<h3>Akses Reseller Panel</h3>
+<div class="card-price">Rp 12.000</div>
+</div>
+
+<div class="card-body">
+<ul class="features-list">
+<li><i class="fas fa-check"></i> Web Panel Access</li>
+<li><i class="fas fa-check"></i> 24/7 Stable</li>
+<li><i class="fas fa-check"></i> Jual Panel</li>
+</ul>
+
+<button class="buy-btn" onclick="order('Reseller Panel','12000')">
+<i class="fab fa-telegram"></i> Beli Sekarang
+</button>
+</div>
+</div>
+
+</div>
+
+<!-- VPS MENU -->
+<h2 style="color:var(--success);margin-bottom:25px">
+<i class="fas fa-cloud"></i> Paket VPS Premium
+</h2>
+
+<div class="vps-grid">
+
+<script>
+function order(nama,harga){
+const admin="autoorderkaabot";
+
+let msg=`PEMBELIAN
+
+Paket : ${nama}
+Harga : Rp ${parseInt(harga).toLocaleString('id-ID')}
+Metode : QRIS`;
+
+window.open(`https://t.me/${admin}?text=${encodeURIComponent(msg)}`);
+}
+</script>
+
+<div class="vps-card">
+<div class="vps-header">
+<h3>VPS 2GB 2CPU</h3>
+<div class="vps-price">Rp 5.000</div>
+</div>
+
+<div class="vps-body">
+<ul class="vps-list">
+<li><i class="fas fa-bolt"></i> Anti Lag Stabil</li>
+<li><i class="fas fa-server"></i> Bot Panel Support</li>
+</ul>
+
+<button class="vps-btn" onclick="order('VPS 2GB 2CPU','5000')">
+Beli VPS
+</button>
+</div>
+</div>
+
+<div class="vps-card">
+<div class="vps-header">
+<h3>VPS 4GB 2CPU</h3>
+<div class="vps-price">Rp 5.000</div>
+</div>
+
+<div class="vps-body">
+<ul class="vps-list">
+<li><i class="fas fa-bolt"></i> Performance Stable</li>
+<li><i class="fas fa-network-wired"></i> Multi Bot</li>
+</ul>
+
+<button class="vps-btn" onclick="order('VPS 4GB 2CPU','5000')">
+Beli VPS
+</button>
+</div>
+</div>
+
+<div class="vps-card">
+<div class="vps-header">
+<h3>VPS 8GB 4CPU</h3>
+<div class="vps-price">Rp 5.000</div>
+</div>
+
+<div class="vps-body">
+<ul class="vps-list">
+<li><i class="fas fa-rocket"></i> High Performance</li>
+</ul>
+
+<button class="vps-btn" onclick="order('VPS 8GB 4CPU','5000')">
+Beli VPS
+</button>
+</div>
+</div>
+
+<div class="vps-card">
+<div class="vps-header">
+<h3>VPS 16GB 4CPU</h3>
+<div class="vps-price">Rp 5.000</div>
+</div>
+
+<div class="vps-body">
+<ul class="vps-list">
+<li><i class="fas fa-cloud"></i> Super Fast</li>
+</ul>
+
+<button class="vps-btn" onclick="order('VPS 16GB 4CPU','5000')">
+Beli VPS
+</button>
+</div>
+</div>
+
+<div class="vps-card">
+<div class="vps-header">
+<h3>VPS 16GB 8CPU</h3>
+<div class="vps-price">Rp 5.000</div>
+</div>
+
+<div class="vps-body">
+<ul class="vps-list">
+<li><i class="fas fa-shield-alt"></i> Premium Performance</li>
+</ul>
+
+<button class="vps-btn" onclick="order('VPS 16GB 8CPU','5000')">
+Beli VPS
+</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
